@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+h2 {
+    font: bold 18px sans-serif;
+}
+
+header, nav, section, article, aside, footer, hgroup {   
+     display: block;
+} 
+time {
+    display: block;
+}
+body {
+    text-align: center;
+}
+img {
+    width: 90px;
+}
+
+.agrupar { 
+    background: greenyellow;
+    width: 900px;
+    margin: 20px auto;
+    // padding: 30px;
+}
+
+.cabecera {
+    text-align: left;
+    background: rgb(182, 182, 182);
+    border: 1px solid rgb(85, 85, 85);
+    padding: 20px;
+}
+
+.menu {
+    background: grey;
+    border: 1px solid rgb(85, 85, 85);
+    padding: 5px auto;
+    text-align: left;
+}
+
+.menu li {
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana;
+    display: inline-block;
+}
+.seccion {
+    margin: 20px;
+    width: 600px;
+    float: left
+}
+
+.columna {
+    margin: 20px;
+    width: 200px;
+    float: right;
+}
+
+.pie_pag {
+clear: both;
+}
