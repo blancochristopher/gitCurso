@@ -1,0 +1,13 @@
+/* CLASES: Nueva forma de declarar las Clases, aunque sea 
+el mismo funcionamiento de Objetos... 
+Se ejecuta en formas
+-- Class Declaration
+-- Class Expressions */
+
+// Class Declaration --- Esta es la más recomendada
+class Curso{}
+
+// Class Expression
+let Curso = class{};
+
+let Usuario = class Usuario{}

@@ -5,10 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Slider de Imagenes segun Clever</title>
-    <link rel="stylesheet" href="estilos.css" type="text/css" />
-    
+    <link rel="stylesheet" href="estilosx.css" type="text/css" />
+    <!-- Hoja de estilos de menumaker.com -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style> 
+    </style>
 </head>
 <body>
+
+    <!-- Menú de horizontal de tutorial Hostinger
+        <div>
+            <nav>
+                <ul id="button">
+                    <li class="menuprincipal"><a href="#">Inicio</a></li>
+                    <li class="menuprincipal"><a href="#">Nosotros</a> 
+                        <ul>
+                            <li><a href='#'><span>Product 1</span></a></li>
+                            <li><a href='#'><span>Product 2</span></a></li>
+                            <li class='last'><a href='#'><span>Product 3</span></a></li>
+                         </ul>
+                    
+                    </li>
+                    <li class="menuprincipal"><a href="#">Presentaciones</a></li>
+                    <li class="menuprincipal"><a href="#">Promociones</a></li>
+                    <li class="menuprincipal"><a href="#">contacto</a></li>
+                </ul>
+            </nav>
+        </div> -->
+    <!-- Menú de CSSMaker http://cssmenumaker.com/menu/grey-red-drop-down-menu  -->
+        <div id='cssmenu'>
+            <ul>
+               <li class='active'><a href='#'><span>Home</span></a></li>
+               <li class='has-sub'><a href='#'><span>Products</span></a>
+                  <ul>
+                     <li><a href='#'><span>Product 1</span></a></li>
+                     <li><a href='#'><span>Product 2</span></a></li>
+                     <li class='last'><a href='#'><span>Product 3</span></a></li>
+                  </ul>
+               </li>
+               <li class='has-sub'><a href='#'><span>About</span></a>
+                  <ul>
+                     <li><a href='#'><span>Company</span></a></li>
+                     <li class='last'><a href='#'><span>Contact</span></a></li>
+                  </ul>
+               </li>
+               <li class='last'><a href='#'><span>Contact</span></a></li>
+            </ul>
+        </div>
+
+<!-- Formulario de Contacto simple -->
+        <div class="contenedor">
+            <form action="" class="form">
+                <div class="form-header">
+                    <h1 class="form-title"> <span id="contacto">  CONTACTO</span></h1>
+                </div>
+                <label for="nombre" class="form-label"> Nombre(s):</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Escriba su(s) nombre(s)">
+
+                <label for="apellidos" class="form-label"> Apellido(s):</label>
+                <input type="text" id="apellidos" class="form-input" placeholder="Escriba su(s) apellido(s)">
+
+                <label for="movil" class="form-label"> Móvil / Whatsapp:</label>
+                <input type="text" id="movil" class="form-input" placeholder="Escriba su número de teléfono y/o Whatsapp">
+
+                <label for="mensaje" class="form-label"> Mensaje:</label>
+                <textarea id="mensaje" class="form-textarea" placeholder="Escriba su mensaje" cols="38" rows="7">
+                    </textarea>
+                
+                <input type="submit" class="btn-submit" value="Enviar Mensaje">
+            </form>            
+        </div>
+
+    <!-- Slider Manual-->    
     <div class="slider-container">
         <span id="slider-image-1"></span>
         <span id="slider-image-2"></span>
@@ -32,7 +100,24 @@
             <a href="#slider-image-4" class="slider-button"></a>
         </div>
 
+        <!-- Ejemplos de cómo incrustar un archivo PDF en HTML
+            --EJEMPLO 1: <embed> tomado de https://programacion.net/articulo/como_embeber_un_documento_pdf_en_una_pagina_web_1931
+        <div>
+            <embed src="files/Brochure.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+            --EJEMPLO 2: <objet> tomado de https://es.stackoverflow.com/questions/116690/como-agregar-un-archivo-pdf-en-html-para-verlo-en-mi-web
+        <div>
+            <object  data="archivo.pdf"></object>
+        </div>
+            --EJEMPLO 3: <iframe> tomado de https://es.stackoverflow.com/questions/116690/como-agregar-un-archivo-pdf-en-html-para-verlo-en-mi-web
+        <div>
+            <iframe  src="archivo.pdf"></iframe>
+        </div>
+                  -->
+
     </div>
+    
+    
     
 </body>
 </html>

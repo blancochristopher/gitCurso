@@ -24,7 +24,7 @@
 .slider-container {
     width: 500px;
     height: 350px;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-right: auto;
     overflow: hidden;
     text-align: center;
@@ -44,7 +44,7 @@
     padding: 0px;
 }
 .button-container{
-    top: -20px;
+    top: -30px;
     position: relative;
 }
 .slider-button {
