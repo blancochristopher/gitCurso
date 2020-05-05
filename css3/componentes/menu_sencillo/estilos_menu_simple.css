@@ -1,0 +1,74 @@
+*{
+    margin: 0em;
+    padding: 0;
+}
+.menu{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn-menu{
+    display: none;
+}
+/* esto es para probar el comportamiento 
+de #btn-menu:checked */
+/* #btn-menu:checked ~ #opciones{ 
+	background-color: blue;
+	color: blue;
+	margin-left: 0; 
+}   */
+div label{
+    display: none;
+}
+div label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;    
+}
+.menu ul li a:hover{
+    background-color: #42B881;
+}
+
+@media screen and (max-width:400px) {
+    div label{
+        display: block;
+		background-color: grey;
+		width: 25px;
+		height: 25px;
+		padding: 10px;
+		border-right: 1px solid #fff;
+    }
+	#opciones{
+		margin-left:-70px;
+		background-color: #fff;
+	}		
+	.menu ul li{
+        display: flex;
+		flex-direction: column;
+	}
+	.menu{
+		/* margin-left: 10px */
+		background-color:#fff;
+		position:absolute;
+	}
+	#btn-menu:checked ~ #opciones{
+		background-color:grey;
+		margin-left: 5px;
+		padding-right: 5px;
+	} 
+
+h1{
+	padding: 55px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Desplazamiento</title>
+    <link rel="stylesheet" href="css_efecto_parallax_basico.css">
+</head>
+<body>
+<div id="axis" class="one">
+<h1 id="letras">Entrega a Domicilio</h1>
+<img class="object moto move-right" src="motorizado2.png"/>
+</div>
+<style>
+.moto {
+    top: 55%;
+    left: 14%;
+}
+#axis:hover .move-right{
+    transform: translate(300px,0);
+    -webkit-transform: translate(300px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
+}
+.object {
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+</style>
+</body>

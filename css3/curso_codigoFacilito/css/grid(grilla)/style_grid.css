@@ -1,0 +1,27 @@
+.contenedor{
+    display: grid;
+    background-color: blue;
+    height: 300px;
+    width: 500px;
+    /* 
+    grid-template-rows: 100px 200px; 
+    grid-template-columns: 200px 300px;
+    --- Esto es igual a lo siguiente: 
+    grid-template: (filas=row) / (columnas=columns);*/
+    grid-template: 100px [linea-horiz-med] 200px / [linea-ini-contenedor] 200px [linea-med-contenedor] 
+                                                    300px [linea-fin-contenedor];
+
+}
+
+.roja{
+    background-color: red;
+    /*grid-column-start: 1 ;
+      grid-column-end: 2;
+      --- Esto es igual a lo siguiente: 
+    grid-column: (desde) / (hasta);*/
+
+    grid-column: linea-ini-contenedor/linea-med-contenedor;
+
+    grid-row: linea-horiz-med;
+
+}

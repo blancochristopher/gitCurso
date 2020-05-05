@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.portada{
+    width: 98%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.portada .encabezado {
+    border-radius: 10px;
+    background-color: gray;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column-start: 1;
+    grid-column-end: -1 ;
+}
+
+.encabezado .menuppal{
+    display: flex;
+    flex-direction: row;
+}
+
+.portada .contenido {
+    grid-column: span 5;
+    
+}
+
+.contenido > .centrada {
+    display: flex;
+    
+    justify-content: center;
+} 
+
+.contenido > .aviso_llamar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.portada .aviso_llamar{
+    background-color: seagreen;
+    padding-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 10px;
+    width: 140px;
+    height: 80px;
+    
+}
+
+.portada .widgets1,
+.portada .widgets2,
+.portada .widgets3 {
+    color: white;
+    background-color: darkblue;
+    height: 70px ;
+}
+.portada .widgets4 {
+    grid-column: span 2;
+    color: white;
+    background-color: darkblue;
+    height: 70px ;
+}
+
+.portada .pieportada {
+    background-color: darkblue;
+    color: white;
+    grid-column: span 5;
+    text-align: center;
+    
+}
+
+@media screen and (max-width:600px) {
+    .portada{
+        background-color: yellow;
+    }
+}

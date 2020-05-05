@@ -1,0 +1,300 @@
+*{
+    margin: 0em;
+    padding: 0;
+}
+.portada {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 50px 130px repeat(1, 1fr) ;
+    
+}
+/* Seccion Menu*/
+.encabezado {
+    margin: 5px auto;
+    width: 96%;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #666666,
+    -2px 2px 2px #666666;
+    grid-column-start:1 ;
+    grid-column-end: -1;
+    grid-row: 1;
+}
+.menu{
+    margin-left: 2px;
+}
+.menu ul{
+    grid-column: ;
+}
+#btn-menu{
+    display: none;
+}
+div label{
+    display: none;
+    width: 25px;
+    height: 20px;
+    padding: 10px;
+    border-right: 1px solid #000000;
+}
+div label:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:rgb(0, 146, 63);
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: rgb(0, 146, 63);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.menu ul li a:hover{
+    background-color:rgb(0, 146, 63);
+    color: white;
+}
+
+
+/* Diseño del cuerpo de la página*/
+.contenido {
+    grid-column: span 5;
+    grid-row: 3;
+    text-align: center;
+}
+.naturantioquia_logo{
+    max-width: 350px;
+}
+.aviso_llamar {
+    color: #fff;
+    text-align: center;
+    font-family: 'Arial Bold', sans-serif;
+    font-size: 20px;
+    background-color: rgb(0, 146, 63);
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    padding: 15px 10px 5px 10px;
+    width: 200px;
+    height: 65px;
+}
+#letras {
+	padding-top: 25px;
+	font-family: 'Arial Bold', sans-serif;
+	font-style: italic;
+    font-size: 20px;
+}
+article {
+    position: relative;
+    grid-column: span 2;
+    grid-row: 4;
+}
+#esquina_arco {
+    margin-left: 0;
+    color: white;
+    background-color: #2d4373;
+    border-radius: 70px 100px 100px 0px;
+    width: 250px;
+    height: 150px;
+ }
+#canvas_arco {
+        border-radius: 0px 0px 0px 120px;
+        background-color:#fff;
+        position: relative;
+        bottom: 0;
+}
+/* Dibujo que se mueve*/
+.moto {
+	width: 180px;
+    top: 75%;
+    left: 15%;
+}
+#axis:hover .move-right{
+    transform: translate(300px,0);
+    -webkit-transform: translate(300px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
+}
+.object {
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+/* Seccion de Enlaces Externos */
+section{
+    grid-column: span 5;
+    grid-row: 5;
+    background-color: #2d4373;
+    color: #ffffff;
+}
+.widgets1{
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: -5px;
+    margin-left: auto;
+    width: 19%;
+    display: inline-flex;
+    color: #2d4373;
+    text-decoration: none;
+    text-align: center;
+}
+.widgets2{
+    grid-column: 2;
+    grid-row: 5;
+    margin: 2px;
+    width: 20%;
+    display: inline-flex;
+    text-align: center;
+}
+.widgets3{
+    grid-column: 3;
+    grid-row: 5;
+    margin: 2px;
+    width: 23%;
+    text-align: center;
+    display: inline-flex;
+}
+.widgets4{
+    grid-column: 4;
+    grid-row: 5;
+    margin: 0px;
+    width: 10%;
+    text-align: center;
+    display: inline-flex;
+    
+}
+address{
+    margin: 0;
+    padding-top: 5px;
+    grid-column: 4;
+    grid-row: 5;
+    width: 23%;
+    display: inline-block;
+}
+#largo{
+  display: none;
+}
+.pieportada{
+    grid-column: span 5;
+    grid-row: 6;
+    text-align: center;
+    background-color: #2d4373;
+}
+#faceLogo {
+    border-radius: 20px;
+    height: 50px;
+  }
+#MinifaceLogo{
+    display: none;
+}
+  #whatsappLogo{
+    border-radius: 30px 30px 30px 0px;
+    color: white;
+    height: 50px;
+  }
+  #whatsapp_logo_simple{
+    display: none;
+  }
+  #gmail2 {
+    border-radius: 10px;
+    height: 50px;
+  }
+  #mapslogoD {
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .footer {
+    text-decoration: none;
+    /*margin-top: 10px;*/
+  }
+  /* Modulo de Adaptación a Dispositivos o Responsive */
+  @media screen and (max-width:600px) {
+    /*cambia el estilo del Menu Principal*/
+    div label{
+        display: block;
+    }
+    #opciones{
+      margin-left:-220px;
+    }		
+    .menu ul li{
+      display: flex;
+      flex-direction: column;
+    }
+    .menu{
+      /* margin-left: 10px */
+      /* background-color:#fff; */
+      position:absolute;
+    }
+    #btn-menu:checked ~ #opciones{
+      background-color:#fff;
+      margin-left: 5px;
+      padding-right: 5px;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: 2px 2px 2px #666666;
+
+    } 
+  
+    /*Desaparecen los Logos Grandes*/
+    #faceLogo {
+        display: none;
+      }
+      #facebook{
+        display: none;
+      }
+      #whatsappLogo{
+        display: none;
+      }
+      #gmail {
+        display: none;
+      }
+      #mapaIcono {
+        display: none;
+      }
+      address #bloque{
+        display: none;
+      }
+    /*Se muestran logos simples*/
+      #MinifaceLogo {
+        height: 60px;
+        display: inline-flex;
+        border-radius: 50%;
+        margin-left: 30px;
+        
+      }
+      .widgets2{
+        display: inline-flex;
+      }
+      
+      #whatsapp_logo_simple{
+        height: 60px;
+        display: inline-flex;
+        border-radius: 50%;
+      }
+      #gmail {
+        display: none;
+      }
+      #mapslogoD {
+        height: 60px;
+        border-radius: 10px 10px 10px 10px;
+      }
+      address {
+        display: block;
+        grid-column: span 5;
+        grid-row: 6;
+        width: 98%;
+        text-align: center;
+        background-color: #2d4373;
+      }
+      #largo{
+        display: inline-flex;
+    
+}

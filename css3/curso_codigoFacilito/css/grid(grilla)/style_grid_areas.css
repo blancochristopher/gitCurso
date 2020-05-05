@@ -1,0 +1,48 @@
+.contenedor{
+    display: grid;
+    background-color: blue;
+    height: 500px;
+    width: 600px;
+    /* 
+    grid-template-rows: 100px 200px; 
+    grid-template-columns: 200px 300px;
+    --- Esto es igual a lo siguiente: 
+    grid-template: (filas=row) / (columnas=columns);*/
+    grid-template:[horiz1] 100px [horiz2] 200px [horiz3] 200px [horiz4] / [linea-ini-contenedor] repeat(6, 1fr) [linea-fin-contenedor];
+    
+    /* grid-template-areas: permite especificar por nombres (separados por espacios)
+        las áreas de la GRID en filas coincidentes con sus respectivas columnas */
+    grid-template-areas: "superior amarillo superior superior superior superior"
+          /* " medio medio medio medio medio medio" 
+           " inferior inferior-violeta inferior inferior inferior inferior "*/
+    ;
+}
+
+.roja{
+    background-color: red;
+    /*grid-column-start: 1 ;
+      grid-column-end: 2;
+      --- Esto es igual a lo siguiente: 
+    grid-column: (desde) / (hasta);*/
+
+    grid-column: linea-ini-contenedor/linea-fin-contenedor;
+
+    grid-row: 2;
+}
+
+.verde{
+    background-color: seagreen;
+    grid-area: superior;
+}
+
+.amarillo{
+    background-color: yellow;
+    /* Esto se especifica en comenzando en la esquina superior izquierda
+      grid-area: ( fila-sup-izq) / (colum-sup-izq) / (fila-inf-dere) / (colum-inf-dere); */
+    grid-area: horiz2 / 4 / 4 / 6 ;
+}
+
+.violeta{
+    background-color: violet;
+    grid-area: inferior-violeta;
+}

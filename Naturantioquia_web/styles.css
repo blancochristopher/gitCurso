@@ -10,8 +10,8 @@
       font-size: 7px;
 
     }
-    img{
-        display:block;
+    .naturantioquia_logo{
+        display:inline-flex;
         margin:auto;
         }
     #aviso_llamar {

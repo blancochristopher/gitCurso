@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+</head>
+<body>
+<h1>Ejemplo de Formularios HTML5</h1>
+<p>Aqui expondremos un ejemplo de un Formulario de 
+    envio de información en HTML5 y sus funcionalidades 
+    directas (no requiere Javascript)</p>
+<form id="formulariodeenvío" action="get">
+    <p>
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="name" 
+        placeholder="Juan Pérez"
+        autofocus
+        autocomplete="on"
+        required
+        /> 
+        <span class="obligatorio">*</span>
+    </p>
+    <p>
+        <label for="passwd">Contraseña: </label>
+        <input type="password" name="passwd" id="passwd" 
+        placeholder="xxxx1234"
+        pattern="[a-z](4)[0-9](4)"
+        required
+        />
+        <span class="obligatorio">*</span>
+    </p>
+    <p>
+        <label for="phone">Teléfono: </label>
+        <input type="tel" name="phone" id="phone"
+        placeholder="123-1234321"
+        />
+    </p>
+    <p>3
+        <label for="email">e-Mail:</label>
+        <input type="email" name="email" id="email"
+        placeholder="direc-electrónica@email.com"
+        />
+    </p>
+    <p>
+        <label for="website">Tu página web:</label>
+        <input type="url" name="website" id="website"
+        placeholder="www.ejemplopáginaweb.com"
+        />
+    </p>
+    <p>
+        <label for="numberpairexample"> N° de Guantes p/Protección: </label>
+        <input type="number" name="numberpairexample" id="numberpairexample" 
+        min="2" max="20" 
+        placeholder="2" step="2"
+        />
+        (entre 2 y 20, sólo pares)
+    </p>
+    
+    <p>
+        <label for="deliverydate"> Fecha de Envío:</label>
+        <input type="date" name="deliverydate" id="deliverydate" 
+        min="2020-04-13" 
+        />
+        <!-- Este formato de fecha no es soportado por todos los Navegadores 
+            según el validador HTML5  https://validator.w3.org/ -->
+        (minimo desde el 13 de abril de 2020)
+    </p>
+    <p>
+        <label for="colorexample">Ejemplo de Color: </label>
+        <input type="color" name="colorexample" id="colorexample"
+        value="#29B6F6"
+        />
+    </p>
+    <p>
+        <label for="search">Buscar:</label>
+        <input type="search" name="search" id="search">
+    </p>
+    <p>
+        <label for="points"> Rango de valores: </label>
+        <input type="range" name="points" id="points"
+        min="1" max="10"
+        />
+        (Rango entre 1 y 10)
+    </p>
+    <p>
+        <fieldset>
+            <legend>Seleccione su Prioridad de Ayuda</legend>
+             <p><label> <input type="radio" name="ayuda" value="Alimentos" checked>Alimentos</label></p>
+             <p><label> <input type="radio" name="ayuda" value="Albergue">Albergue</label></p>
+             <p><label> <input type="radio" name="ayuda" value="Emocional">Emocional</label></p>
+             <p><label> <input type="radio" name="ayuda" value="Alimentos">Psicológica</label></p>
+             <p><label> <input type="radio" name="ayuda" value="Servicios">Servicios</label></p>
+             <p><label> <input type="radio" name="ayuda" value="Varios">Varios</label></p>
+        </fieldset>
+    </p>
+    <p>
+        <fieldset>
+            <legend>Tipo de Envío</legend>
+            <p><label> <input type="checkbox" name="deliverytype" value="Urgente">Urgente</label></p>
+            <p><label> <input type="checkbox" name="deliverytype" value="Frágil">Frágil</label></p>
+            <p><label> <input type="checkbox" name="deliverytype" value="Recibido" checked>Recibido</label></p>
+            <p><label> <input type="checkbox" name="deliverytype" value="Reembolsable">Reembolsable</label></p>
+        </fieldset>
+    </p>
+    <p><span id="obligatorio">* Campo obligatorio</span>
+    (la Contraseña debe contener 4 letras y 4 numeros en este orden) 
+    </p>
+    <input type="reset" value="Borrar">
+    <input type="submit" value="Enviar">
+</form>
+
+
+    
+</body>
+</html>

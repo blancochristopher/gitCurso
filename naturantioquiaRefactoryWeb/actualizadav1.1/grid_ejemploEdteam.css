@@ -1,0 +1,27 @@
+
+/*
+Lo siguiente hasta @support es rediseñar la estructura
+para que se mantenga los estilos aunque el navegador sea 
+incompatible con la tecnologia CSS GRID
+*/
+.portada {
+	margin:2em auto;
+	width: 90%;
+	border: 2px solid red;
+	display: flex;
+	flex-wrap: wrap;
+}
+p {	
+	width: calc(25% - 10px);
+	margin: 10px;
+	background: yellow;
+	
+}
+@supports(grid-template-columns: initial) {
+	
+.portada{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid
+	
+}
